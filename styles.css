@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+
+}
+
+.jumbotron {
+    background-image: url("concrete-road.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.navbar{
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+font-family: 'Roboto', sans-serif;
+
+}
