@@ -3,26 +3,37 @@ body {
 
 }
 
+
+
 .jumbotron-fluid {
     background-image: url("concrete-road.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    min-height: 500px;
+    width: 100%;
 }
  .limeText {
     color: lime;
 }
 
+
+
+.nav{
+    width: 30%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      )
+
+}
+
 .navbar{
-    background: transparent;
     font-family: 'Roboto', sans-serif;
     color: lime;
 
 }
 
-#navbar{
-    width: 30%;
-}
+
 
 h1{
 font-family: 'Roboto', sans-serif;
