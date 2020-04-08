@@ -20,6 +20,10 @@ body {
 
 }
 
+#navbar{
+    width: 30%;
+}
+
 h1{
 font-family: 'Roboto', sans-serif;
 
