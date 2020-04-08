@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background: linear-gradient(to top, #a80077, #66ff00);
 
 }
 
@@ -9,14 +9,22 @@ body {
     background-size: cover;
     min-height: 400px;
 }
+ .limeText {
+    color: lime;
+}
 
 .navbar{
     background: transparent;
     font-family: 'Roboto', sans-serif;
+    color: lime;
 
 }
 
 h1{
 font-family: 'Roboto', sans-serif;
 
+}
+
+#playlist iframe {
+    border: solid 10px gray;
 }
