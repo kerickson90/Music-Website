@@ -34,7 +34,7 @@
             <a class="nav-link font-weight-bold limeText" href="#">Reviews</a>
             <a class="nav-link font-weight-bold limeText" href="#">Archives</a>
             <form id ="frmSearch" method="get" action="index.html" class="form-inline">
-                <input class="form-control" id="txtSearch" type="search" name="search_bar" placeholder="Search" aria-label="Search">
+                <input class="form-control" id="txtSearch" type="search" name="search_bar" placeholder="Find Music" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
         </nav>
@@ -244,7 +244,8 @@
 
 <script type="text/javascript">
     document.getElementById('frmSearch').onsubmit = function() {
-        window.location = 'http://www.google.com/search?q=site:kerickson90.github.io/Music-Website' + document.getElementById('txtSearch').value;
+        window.location = 'http://www.google.com/search?q=site:kerickson90.github.io/Music-Website' +
+         document.getElementById('txtSearch').value;
         return false;
     }
 </script>
