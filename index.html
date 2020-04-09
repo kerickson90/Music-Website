@@ -16,15 +16,6 @@
 
 <body>
 
-<div id="header" class="container-fluid">
-        <nav class="nav ml-1 p-1 rounded fixed-top">
-            <a class="navbar-brand font-weight-bold limeText" href="#">KMS</a>
-            <a class="nav-link font-weight-bold active limeText" href="#">Home</a>
-            <a class="nav-link font-weight-bold limeText" href="#playlist">March 2020 Playlist</a>
-            <a class="nav-link font-weight-bold limeText" href="#">Reviews</a>
-            <a class="nav-link font-weight-bold limeText" href="#">Link</a>
-        </nav>
-
     <div class="jumbotron-fluid">
         <div class="justify-content-center row">
             <div class="col-xs-3">
@@ -34,6 +25,21 @@
             </div>
         </div>
     </div>
+
+    <div id="header" class="container-fluid">
+        <nav class="navbar rounded fixed-top">
+            <a class="navbar-brand font-weight-bold limeText" href="#">KMS</a>
+            <a class="nav-link font-weight-bold active limeText" href="#">Home</a>
+            <a class="nav-link font-weight-bold limeText" href="#playlist">March 2020 Playlist</a>
+            <a class="nav-link font-weight-bold limeText" href="#">Reviews</a>
+            <a class="nav-link font-weight-bold limeText" href="#">Archives</a>
+            <form id ="frmSearch" method="get" action="index.html" class="form-inline">
+                <input class="form-control" id="txtSearch" type="search" name="search_bar" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+        </nav>
+
+
     </div>
 
     <main>
@@ -41,10 +47,10 @@
         <div class="row">
         <div class="col">
 
-            <h1 class="text-white" id="playlist">March 2020 Playlist</h1>
+            <h1 class="font-weight-bold" id="playlist">March 2020 Playlist</h1>
         </div>        
         <div class="col">   
-         <p class="text-white text-center">Please note you will need to login with a <a style="color: black;"
+         <p id="helpText" class="font-weight-bold text-center">Please note you will need to login with a <a style="color: black;"
                     target="_blank" href="https://www.spotify.com">Spotify</a> account in order to play the full-length
                 songs.</p>
             </div>
@@ -57,7 +63,7 @@
 
             <div class=" justify-content-center mb-3 row">
             <iframe src="https://open.spotify.com/embed/track/6davZgttyPQpw5JWnG3hRI" frameborder="0" 
-          width="70%"  allowtransparency="true" allow="encrypted-media"></iframe>
+          width="70%"  allowtransparency="ture" allow="encrypted-media"></iframe>
             </div>
  
      <div class=" justify-content-center mb-3  row">
@@ -69,7 +75,10 @@
         <iframe src="https://open.spotify.com/embed/track/55CHeLEfn5iJ0IIkgaa4si" 
         width="70%"   frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-
+        <div class=" justify-content-center mb-3  row">
+        <iframe src="https://open.spotify.com/embed/track/3NNTVLeuYUGWsCTAxMNzdw"
+        width="70%"   frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
 
             <div class=" justify-content-center mb-3  row">
              <iframe src="https://open.spotify.com/embed/track/5Nu5Uyoauauy9LFePYL1Z3" frameborder="0"
@@ -231,6 +240,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:kerickson90.github.io/Music-Website' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
 
 </body>
 

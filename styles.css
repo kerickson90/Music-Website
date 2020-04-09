@@ -17,9 +17,16 @@ body {
 }
 
 
+#playlist:hover {
+    color: violet;
+}
 
-.nav{
-    width: 30%;
+#helpText:hover{
+    color: violet;
+}
+
+
+nav{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
